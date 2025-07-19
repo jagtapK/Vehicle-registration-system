@@ -11,7 +11,7 @@ import vehicleRegistration.Entity.Vehicles;
 
 public class UpdateVehicleNo {
 
-	public void UpdateEmpDetails() {
+	public void UpdateDetails() {
 
 		SessionFactory factory = vehicleRegistrationUtility.getSessionFactory();
 

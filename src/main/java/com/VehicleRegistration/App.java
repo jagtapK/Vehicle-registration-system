@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class App {
 	public static void main(String[] args) {
-		System.out.println("Employee Directory System! ");
+		System.out.println("Vehicle Registration System! ");
 
 		System.out.println("Choose an option:" + "\n1. Add New Vehicles" + "\n2.Search by Model "
 				+ "\n3. Delete Vehicle By ID" + "\n4. Update VehicleNo" + "\n5. Exit");
@@ -30,7 +30,7 @@ public class App {
 			break;
 		case 4:
 			UpdateVehicleNo ue = new UpdateVehicleNo();
-			ue.UpdateEmpDetails();
+			ue.UpdateDetails();
 			break;
 		case 5:
 			System.out.println("Exiting program. Goodbye!");
