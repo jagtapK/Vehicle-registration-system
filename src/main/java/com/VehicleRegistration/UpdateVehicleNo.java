@@ -22,13 +22,12 @@ public class UpdateVehicleNo {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter vehicle Number");
 		String vehicleNo = sc.nextLine();
-		sc.nextLine();
+//		sc.nextLine();
 
 		Vehicles s1 = session.find(Vehicles.class, vehicleNo);
-
-		System.out.println("Enter Updated Salary");
-		String vehicleno = sc.nextLine();
-		s1.setVehicleNumber(vehicleno);
+      
+		System.out.println(s1.toString());
+        s1.setVehicleNumber(vehicleNo);
 
 		transaction.commit();
 

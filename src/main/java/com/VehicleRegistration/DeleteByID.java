@@ -1,5 +1,7 @@
 package com.VehicleRegistration;
 
+import java.util.Scanner;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -16,7 +18,10 @@ public class DeleteByID {
 
 		Transaction transaction = session.beginTransaction();
 
-		Vehicles st = session.find(Vehicles.class, 123);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Vehicle ID to delete : ");
+		int Id = sc.nextInt();
+		Vehicles st = session.find(Vehicles.class, Id);
 		session.remove(st);
 
 		transaction.commit();
