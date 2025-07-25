@@ -18,7 +18,7 @@
 		
 		<mapping class = "vehicleRegistration.Entity.Vehicles"/>
 		<mapping class = "vehicleRegistration.Entity.Employee"/>
-		<mapping class = "vehicleRegistration.Entity.Documents"/>
+		
 	
 		
 		

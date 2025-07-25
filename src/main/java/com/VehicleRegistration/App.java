@@ -7,7 +7,7 @@ public class App {
 		System.out.println("Vehicle Registration System! ");
 
 		System.out.println("Choose an option:" + "\n1. Add New Vehicles" + "\n2.Search by Model "
-				+ "\n3. Delete Vehicle By ID" + "\n4. Update VehicleNo" + "\n5. Exit");
+				+ "\n3. Delete Vehicle By ID" + "\n4. Update VehicleNo" + "\n5. Details" + "\n6. Exit");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your Choice");
 
@@ -33,6 +33,10 @@ public class App {
 			ue.UpdateDetails();
 			break;
 		case 5:
+			Details d = new Details();
+			d.detail();
+			break;	
+		case 6:
 			System.out.println("Exiting program. Goodbye!");
 			System.exit(0); // Terminates the program immediately
 			break;
