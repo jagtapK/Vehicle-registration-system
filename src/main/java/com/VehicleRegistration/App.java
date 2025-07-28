@@ -6,8 +6,8 @@ public class App {
 	public static void main(String[] args) {
 		System.out.println("Vehicle Registration System! ");
 
-		System.out.println("Choose an option:" + "\n1. Add New Vehicles" + "\n2.Search by Model "
-				+ "\n3. Delete Vehicle By ID" + "\n4. Update VehicleNo" + "\n5. Details" + "\n6. Exit");
+		System.out.println("Choose an option:" + "\n1. Add New Vehicles" + "\n2. Search by Model "
+				+ "\n3. Delete Vehicle By ID" + "\n4. Update VehicleNo" + "\n5. Details");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your Choice");
 
@@ -35,11 +35,10 @@ public class App {
 		case 5:
 			Details d = new Details();
 			d.detail();
-			break;	
-		case 6:
-			System.out.println("Exiting program. Goodbye!");
-			System.exit(0); // Terminates the program immediately
 			break;
+		default:
+			System.out.println("Invalid choice! Please enter a number between 1 and 5.");
+
 		}
 
 	}

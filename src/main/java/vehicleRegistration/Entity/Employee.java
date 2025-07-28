@@ -22,12 +22,10 @@ public class Employee {
 	private String Department;
 
 	private int mobileNo;
-	
+
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "Vehicle_id")
 	private List<Vehicles> vehicle;
-	
-	
 
 	public int getId() {
 		return id;

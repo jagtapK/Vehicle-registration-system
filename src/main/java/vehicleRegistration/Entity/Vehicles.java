@@ -66,6 +66,4 @@ public class Vehicles {
 				+ model + ", registrationYear=" + registrationYear + "]";
 	}
 
-	
-
 }

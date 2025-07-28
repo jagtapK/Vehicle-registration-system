@@ -13,20 +13,19 @@ import vehicleRegistration.Entity.Vehicles;
 
 public class Details {
 
-	public void detail(){
+	public void detail() {
 
 		SessionFactory factory = vehicleRegistrationUtility.getSessionFactory();
 		Session session = factory.openSession();
 		Transaction transaction = session.beginTransaction();
 
-		
+		// Added Employee and Vehicle Details 
 		Employee e = new Employee();
 		e.setFname("Tonny");
 		e.setLname("Deo");
 		e.setDepartment("HR");
 		e.setMobileNo(123456);
-		
-		
+
 		Vehicles v = new Vehicles();
 		v.setModel("car");
 		v.setOwnerName("John");
@@ -38,22 +37,18 @@ public class Details {
 		v.setOwnerName("Jony");
 		v.setRegistrationYear(2010);
 		v.setVehicleNumber("MH12jk2020");
-		
+
 		Vehicles v2 = new Vehicles();
 		v.setModel("City");
 		v.setOwnerName("John");
 		v.setRegistrationYear(2010);
 		v.setVehicleNumber("MH12jk2020");
-		
-//		Documents d = new Documents();
-//		d.setUsername("Alice");
-//		d.setAdharNo(12345678);
-//		d.setPanNo(3214);
 
+		//Created List for No.of Vehicles..
 		List<Vehicles> vlist = Arrays.asList(v, v1, v2);
 		e.setVehicle(vlist);
 		session.persist(e);
-		
+
 		transaction.commit();
 		session.close();
 		
