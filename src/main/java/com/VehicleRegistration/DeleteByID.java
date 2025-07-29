@@ -12,6 +12,7 @@ import vehicleRegistration.Entity.Vehicles;
 public class DeleteByID {
 
 	public void DeleteDetails() {
+		
 		SessionFactory factory = vehicleRegistrationUtility.getSessionFactory();
 
 		Session session = factory.openSession();
